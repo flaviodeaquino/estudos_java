@@ -10,6 +10,11 @@ public class Pessoa {
         return imc;
     }
 
+    // Método construtor - só é necessário quando precisar de um valor "default"
+    public Pessoa(float peso, float altura) {
+        this.peso = peso;
+        this.altura = altura;
+    }
 
     // Métodos acessores - dão acesso à entidades externas acessarem as informações do objeto Pessoa
     public void setPeso(float peso) {
