@@ -14,7 +14,7 @@ public class Main {
         System.out.println("O salário do vendedor é: " + v.calcularSalario());
 
         Motorista m = new Motorista();
-    
+
 
     }
 }
