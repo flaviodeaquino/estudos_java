@@ -3,7 +3,7 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
 
-        int totalAlunos = 1;
+        int totalAlunos = 2;
         Scanner leitorScanner = new Scanner(System.in);
 
         while (totalAlunos > 0) {
