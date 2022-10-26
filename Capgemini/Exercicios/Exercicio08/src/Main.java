@@ -10,6 +10,6 @@ public class Main {
         float cotacao = scan.nextFloat();
         float dolar = real / cotacao;
         System.out.println(real + " reais é equivalente à " + dolar + " doláres." );
-        
+
     }
 }
