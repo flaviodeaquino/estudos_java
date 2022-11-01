@@ -12,11 +12,7 @@ public class Funcionario {
 
     public void salarioAnual() {
         float salarioAno = (salario * 13);
-        System.out.println("O salário anual com 13º é de R$ " + salario);
-    }
-
-    public String getPrimeiroNome() {
-        return primeiroNome;
+        System.out.println("Salário anual: " + salarioAno);
     }
 
     public void setPrimeiroNome(String primeiroNome) {
