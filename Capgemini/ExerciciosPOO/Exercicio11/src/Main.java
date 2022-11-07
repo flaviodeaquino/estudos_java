@@ -8,9 +8,7 @@ public class Main {
         ingressoVip.setValorAdicional(10f);
 
         ingresso.imprimirValor();
-        ingressoVip.imprimirValorVip();
-
-        System.out.println(ingressoVip.getValorIngresso()); //pq não está pegando o valor setado no ingresso.set?
-
+        ingressoVip.imprimirValorVip(ingresso.getValorIngresso());
+        
     }
 }

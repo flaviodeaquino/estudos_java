@@ -14,13 +14,13 @@ public class IngressoVip extends Ingresso{
         this.valorAdicional = valorAdicional;
     }
 
-    public float valorIngressoVip() {
-        float ingressoVip = getValorIngresso() + (this.valorAdicional);
+    public float valorIngressoVip(float valorIngresso) {
+        float ingressoVip = valorIngresso + (this.valorAdicional);
         return ingressoVip;
     }
 
-    public void imprimirValorVip() {
-        System.out.println("O preço do ingresso vip é R$" + valorIngressoVip());
+    public void imprimirValorVip(float valorIngresso) {
+        System.out.println("O preço do ingresso vip é R$" + valorIngressoVip(valorIngresso));
     }
 
 }
