@@ -9,6 +9,6 @@ public class Main {
 
         ingresso.imprimirValor();
         ingressoVip.imprimirValorVip(ingresso.getValorIngresso());
-        
+
     }
 }
