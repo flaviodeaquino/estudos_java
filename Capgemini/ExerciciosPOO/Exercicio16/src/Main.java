@@ -16,7 +16,7 @@ public class Main {
         voyage.imprimirDadosCarro();
 
         System.out.println("");
-        
+
         ferrari.abastecer(20);
         voyage.abastecer(50);
 
