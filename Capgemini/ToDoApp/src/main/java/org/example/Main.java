@@ -1,7 +1,15 @@
 package org.example;
 
+import util.ConnectionFactory;
+
+import java.sql.Connection;
+
 public class Main {
     public static void main(String[] args) {
-        System.out.println("Hello world!");
+
+        Connection c = ConnectionFactory.getConnection();
+
+        ConnectionFactory.closeConnection(c);
+
     }
 }

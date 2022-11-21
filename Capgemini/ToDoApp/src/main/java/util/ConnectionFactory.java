@@ -3,6 +3,7 @@ package util;
 import java.sql.Connection;
 import java.sql.DriverManager;
 
+
 public class ConnectionFactory {
 
     public static final String DRIVER = "com.mysql.jdbc.Driver";
@@ -19,6 +20,13 @@ public class ConnectionFactory {
             }
         }
 
-        
-
+        public static void closeConnection(Connection connection) {
+            try {
+                if (connection != null) {
+                    connection.close();
+                }
+            } catch (Exception ex) {
+                throw new RuntimeException("Erro ao fechar a conexão com o banco de dados.", ex);
+            }
+        }
 }
