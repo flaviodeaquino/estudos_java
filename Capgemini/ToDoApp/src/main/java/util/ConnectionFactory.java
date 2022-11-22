@@ -40,7 +40,7 @@ public class ConnectionFactory {
             if (statement != null ) {
                 statement.close();
             }
-            
+
         } catch (Exception ex) {
             throw new RuntimeException("Erro ao fechar a conexão com o banco de dados.", ex);
         }
