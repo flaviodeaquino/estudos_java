@@ -8,20 +8,34 @@ public class Task {
     private int idProject;
     private String name;
     private String description;
+    private String notes;
     private boolean isCompleted;
     private Date deadline;
     private Date createdAt;
     private Date updateAt;
 
-    public Task(int id, int idProject, String name, String description, boolean isCompleted, Date deadline, Date createdAt, Date updateAt) {
+    public Task(int id, int idProject, String name, String description, boolean isCompleted, String notes ,Date deadline, Date createdAt, Date updateAt) {
         this.id = id;
         this.idProject = idProject;
         this.name = name;
         this.description = description;
         this.isCompleted = isCompleted;
+        this.
         this.deadline = deadline;
         this.createdAt = createdAt;
         this.updateAt = updateAt;
+    }
+
+    public Task() {
+        this.createdAt = new Date();
+    }
+
+    public String getNotes() {
+        return notes;
+    }
+
+    public void setNotes(String notes) {
+        this.notes = notes;
     }
 
     public int getId() {
@@ -95,6 +109,7 @@ public class Task {
                 ", idProject=" + idProject +
                 ", name='" + name + '\'' +
                 ", description='" + description + '\'' +
+                ", notes=" + notes +
                 ", isCompleted=" + isCompleted +
                 ", deadline=" + deadline +
                 ", createdAt=" + createdAt +
