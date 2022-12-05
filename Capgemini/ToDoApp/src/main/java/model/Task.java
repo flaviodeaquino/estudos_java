@@ -20,7 +20,7 @@ public class Task {
         this.name = name;
         this.description = description;
         this.isCompleted = isCompleted;
-        this.
+        this.notes = notes;
         this.deadline = deadline;
         this.createdAt = createdAt;
         this.updateAt = updateAt;
