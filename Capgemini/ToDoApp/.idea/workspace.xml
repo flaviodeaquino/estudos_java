@@ -5,10 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e4f13dc5-fee2-4eed-9589-ef2528ffefb6" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/../NETBEANS/TodoappNetBeans/app/src/main/java/MainScreen.form" beforeDir="false" afterPath="$PROJECT_DIR$/../NETBEANS/TodoappNetBeans/app/src/main/java/MainScreen.form" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../NETBEANS/TodoappNetBeans/app/src/main/java/MainScreen.java" beforeDir="false" afterPath="$PROJECT_DIR$/../NETBEANS/TodoappNetBeans/app/src/main/java/MainScreen.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../NETBEANS/TodoappNetBeans/app/src/main/java/TaskDialogScreen.form" beforeDir="false" afterPath="$PROJECT_DIR$/../NETBEANS/TodoappNetBeans/app/src/main/java/TaskDialogScreen.form" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../NETBEANS/TodoappNetBeans/app/src/main/java/TaskDialogScreen.java" beforeDir="false" afterPath="$PROJECT_DIR$/../NETBEANS/TodoappNetBeans/app/src/main/java/TaskDialogScreen.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../NETBEANS/TodoappNetBeans/app/src/main/java/MainScreen.form" beforeDir="false" afterPath="$PROJECT_DIR$/../NETBEANS/TodoappNetBeans/app/src/main/java/view/MainScreen.form" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../NETBEANS/TodoappNetBeans/app/src/main/java/MainScreen.java" beforeDir="false" afterPath="$PROJECT_DIR$/../NETBEANS/TodoappNetBeans/app/src/main/java/view/MainScreen.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../NETBEANS/TodoappNetBeans/app/src/main/java/ProjectDialogScreen.form" beforeDir="false" afterPath="$PROJECT_DIR$/../NETBEANS/TodoappNetBeans/app/src/main/java/view/ProjectDialogScreen.form" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../NETBEANS/TodoappNetBeans/app/src/main/java/ProjectDialogScreen.java" beforeDir="false" afterPath="$PROJECT_DIR$/../NETBEANS/TodoappNetBeans/app/src/main/java/view/ProjectDialogScreen.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../NETBEANS/TodoappNetBeans/app/src/main/java/TaskDialogScreen.form" beforeDir="false" afterPath="$PROJECT_DIR$/../NETBEANS/TodoappNetBeans/app/src/main/java/view/TaskDialogScreen.form" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../NETBEANS/TodoappNetBeans/app/src/main/java/TaskDialogScreen.java" beforeDir="false" afterPath="$PROJECT_DIR$/../NETBEANS/TodoappNetBeans/app/src/main/java/view/TaskDialogScreen.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/view/MainScreen.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/view/MainScreen.form" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/view/MainScreen.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/view/MainScreen.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
