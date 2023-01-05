@@ -5,6 +5,7 @@ import controller.ProjectController;
 import controller.TaskController;
 import java.awt.Color;
 import java.awt.Font;
+import java.util.List;
 import javax.swing.DefaultListModel;
 import model.Project;
 
@@ -24,7 +25,7 @@ public class MainScreen extends javax.swing.JFrame {
     ProjectController projectController;
     TaskController taskController;
     
-    DefaultListModel<Project> projectModel;
+    DefaultListModel projectModel;
     
     public MainScreen() {
         initComponents();
@@ -427,7 +428,7 @@ public class MainScreen extends javax.swing.JFrame {
     }
     
     public void initComponentsModel() {        
-        projectModel = new DefaultListModel<Project>();
+        projectModel = new DefaultListModel();
         loadProjects();
     }
     
@@ -436,7 +437,7 @@ public class MainScreen extends javax.swing.JFrame {
         
         projectModel.clear();
         
-        for (int i = 0; i < projects.size() -1; i++) {
+        for (int i = 0; i < projects.size(); i++) {
             
             Project project = projects.get(i);
             projectModel.addElement(project);
