@@ -31,6 +31,7 @@ public class MainScreen extends javax.swing.JFrame {
         decorateTableTask();
         
         initDataController();
+        initComponentsModel();
         
     }
 
@@ -163,7 +164,7 @@ public class MainScreen extends javax.swing.JFrame {
             jPanelProjectsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanelProjectsLayout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(jLabelProjectsTitle, javax.swing.GroupLayout.DEFAULT_SIZE, 160, Short.MAX_VALUE)
+                .addComponent(jLabelProjectsTitle, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jLabelProjectsAdd)
                 .addContainerGap())
@@ -216,11 +217,6 @@ public class MainScreen extends javax.swing.JFrame {
         jPanelProjectList.setBackground(new java.awt.Color(255, 255, 255));
 
         jListProjects.setFont(new java.awt.Font("Ubuntu", 1, 18)); // NOI18N
-        jListProjects.setModel(new javax.swing.AbstractListModel<String>() {
-            String[] strings = { "Item 1", "Item 2", "Item 3", "Item 4", "Item 5" };
-            public int getSize() { return strings.length; }
-            public String getElementAt(int i) { return strings[i]; }
-        });
         jListProjects.setSelectionMode(javax.swing.ListSelectionModel.SINGLE_SELECTION);
         jListProjects.setFixedCellHeight(50);
         jListProjects.setSelectionBackground(new java.awt.Color(0, 153, 102));
@@ -285,7 +281,7 @@ public class MainScreen extends javax.swing.JFrame {
             jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel3Layout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(jScrollPaneTasks, javax.swing.GroupLayout.DEFAULT_SIZE, 575, Short.MAX_VALUE)
+                .addComponent(jScrollPaneTasks, javax.swing.GroupLayout.DEFAULT_SIZE, 515, Short.MAX_VALUE)
                 .addContainerGap())
         );
         jPanel3Layout.setVerticalGroup(
@@ -430,10 +426,21 @@ public class MainScreen extends javax.swing.JFrame {
         taskController = new TaskController();
     }
     
+    public void initComponentsModel() {        
+        projectModel = new DefaultListModel<Project>();
+        loadProjects();
+    }
     
     public void loadProjects() {
+        List<Project> projects = projectController.getAll();
         
+        projectModel.clear();
         
-        
+        for (int i = 0; i < projects.size() -1; i++) {
+            
+            Project project = projects.get(i);
+            projectModel.addElement(project);
+        }
+        jListProjects.setModel(projectModel);
     }
 }
