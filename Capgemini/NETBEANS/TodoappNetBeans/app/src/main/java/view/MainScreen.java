@@ -10,6 +10,7 @@ import java.awt.event.WindowEvent;
 import java.util.List;
 import javax.swing.DefaultListModel;
 import model.Project;
+import model.Task;
 import util.TaskTableModel;
 
 
@@ -440,7 +441,17 @@ public class MainScreen extends javax.swing.JFrame {
     public void initComponentsModel() {        
         projectsModel = new DefaultListModel();
         loadProjects();
+        
+        taskModel = new TaskTableModel();
+        jTableTasks.setModel(taskModel);
+        loadTasks();
     }
+    
+    public void loadTasks() {
+        List<Task> tasks = taskController.getAll(2);
+        taskModel.setTasks(tasks);
+    }
+    
     
     public void loadProjects() {
         List<Project> projects = projectController.getAll();
