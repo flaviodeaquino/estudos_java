@@ -32,9 +32,9 @@ public class TaskController  {
             statement.setString(3, task.getDescription());
             statement.setBoolean(4, task.isCompleted());
             statement.setString(5, task.getNotes());
-            statement.setDate(6, new Date(task.getDeadline().getTime()));
-            statement.setDate(7, new Date(task.getCreatedAt().getTime()));
-            statement.setDate(8, new Date(task.getUpdateAt().getTime()));
+            statement.setDate(6, new java.sql.Date(task.getDeadline().getTime()));
+            statement.setDate(7, new java.sql.Date(task.getCreatedAt().getTime()));
+            statement.setDate(8, new java.sql.Date(task.getUpdateAt().getTime()));
             statement.execute();
 
         } catch (Exception ex) {
@@ -74,9 +74,9 @@ public class TaskController  {
             statement.setString(3, task.getDescription());
             statement.setString(4, task.getNotes());
             statement.setBoolean(5, task.isCompleted());
-            statement.setDate(6, new Date(task.getDeadline().getTime()));
-            statement.setDate(7, new Date(task.getCreatedAt().getTime()));
-            statement.setDate(8, new Date(task.getUpdateAt().getTime()));
+            statement.setDate(6, new java.sql.Date(task.getDeadline().getTime()));
+            statement.setDate(7, new java.sql.Date(task.getCreatedAt().getTime()));
+            statement.setDate(8, new java.sql.Date(task.getUpdateAt().getTime()));
             statement.setInt(9, task.getId());
 
             //Executando a query

@@ -444,11 +444,11 @@ public class MainScreen extends javax.swing.JFrame {
         
         taskModel = new TaskTableModel();
         jTableTasks.setModel(taskModel);
-        loadTasks();
+        loadTasks(14);
     }
     
-    public void loadTasks() {
-        List<Task> tasks = taskController.getAll(2);
+    public void loadTasks(int idProject) {
+        List<Task> tasks = taskController.getAll(idProject);
         taskModel.setTasks(tasks);
     }
     
