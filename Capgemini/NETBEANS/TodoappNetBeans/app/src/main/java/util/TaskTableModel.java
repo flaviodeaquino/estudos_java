@@ -34,6 +34,10 @@ public class TaskTableModel extends AbstractTableModel {
         return columns[columnIndex];
     }
     
+    public boolean isCellEditable(int rowIndex, int columnIndex) {
+        return columnIndex == 3;
+    }
+    
 
     @Override
     public Object getValueAt(int rowIndex, int columnIndex) {
