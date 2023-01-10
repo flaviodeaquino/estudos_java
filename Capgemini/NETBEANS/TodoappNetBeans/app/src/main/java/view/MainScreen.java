@@ -488,7 +488,12 @@ public class MainScreen extends javax.swing.JFrame {
         
         taskModel = new TaskTableModel();
         jTableTasks.setModel(taskModel);
-        loadTasks(2);
+        
+        if (!projectsModel.isEmpty()) {
+            jListProjects.setSelectedIndex(1);
+            Project project = (Project) projectsModel.get(1);
+            loadTasks(project.getId());
+        }         
     }
     
     public void loadTasks(int idProject) {
