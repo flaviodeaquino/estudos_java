@@ -380,7 +380,11 @@ public class MainScreen extends javax.swing.JFrame {
         // TODO add your handling code here:
         
         TaskDialogScreen taskDialogScreen = new TaskDialogScreen(this, rootPaneCheckingEnabled);     
-        //taskDialogScreen.setProject(null);
+        
+        int projectIndex = jListProjects.getSelectedIndex();
+        Project project = (Project) projectsModel.get(projectIndex);
+        taskDialogScreen.setProject(project);
+        
         taskDialogScreen.setVisible(true);
         
     }//GEN-LAST:event_jLabelTasksAddMouseClicked
@@ -490,8 +494,8 @@ public class MainScreen extends javax.swing.JFrame {
         jTableTasks.setModel(taskModel);
         
         if (!projectsModel.isEmpty()) {
-            jListProjects.setSelectedIndex(1);
-            Project project = (Project) projectsModel.get(1);
+            jListProjects.setSelectedIndex(0);
+            Project project = (Project) projectsModel.get(0);
             loadTasks(project.getId());
         }         
     }
