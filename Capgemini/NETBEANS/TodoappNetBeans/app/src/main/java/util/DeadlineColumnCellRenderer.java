@@ -4,6 +4,7 @@
  */
 package util;
 
+import java.awt.Color;
 import java.awt.Component;
 import javax.swing.JLabel;
 import javax.swing.JTable;
@@ -20,13 +21,20 @@ public class DeadlineColumnCellRenderer extends DefaultTableCellRenderer {
             boolean isSelected, boolean hasFocus, int row, int column) {
         
         JLabel label; 
-         label = (JLabel) super.getTableCellRendererComponent(table, 
+        label = (JLabel) super.getTableCellRendererComponent(table, 
                 value, isSelected, hasFocus, row, column);
          
-         label.setHorizontalAlignment(CENTER);
+        label.setHorizontalAlignment(CENTER);
+          
+        TaskTableModel taskModel = (TaskTableModel) table.getModel();
+        Task task = taskModel.getTasks().get(row);
          
-    
-        return null;
+        if (task.getDeadline().after(new Date())) {
+            label.setBackground(Color.GREEN);      
+        } else {
+            label.setBackground(Color.red);
+        }   
+        return label;
     }
     
 }
