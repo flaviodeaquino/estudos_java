@@ -41,6 +41,7 @@ public class MainScreen extends javax.swing.JFrame {
         initComponentsModel();
         
         decorateTableTask();
+        
     }
 
     /**
@@ -476,7 +477,10 @@ public class MainScreen extends javax.swing.JFrame {
         jTableTasks.getTableHeader().setBackground(new Color(0,153,102));
         jTableTasks.getTableHeader().setForeground(new Color(255,255,255));
         
-        jTableTasks.getColorModel().getColumn(2).setCellRenderer(new DeadlineColumnCellRenderer());
+        //Criando um sort automático para as colunas da table
+        //jTableTasks.setAutoCreateRowSorter(true);
+        
+        //jTableTasks.getColorModel().getColumn(2).setCellRenderer(new DeadlineColumnCellRenderer());
         
     }
 
